@@ -107,12 +107,13 @@ nav li:hover > .sub-menu {
     }
     header nav li {
         width: 100%;
-        text-align: right;
+        text-align: center;
         border-bottom: 1px solid #fff;
         margin: 0;
         padding: 0;
     }
-    header nav li:last-child {
+    header nav > ul > li:last-child {
+        display: flex;
         border-bottom: 0;
         padding: 0;
     }
@@ -122,10 +123,11 @@ nav li:hover > .sub-menu {
         display: inline-block;
         padding: 20px;
     }
-    header .btn {
+    header .button {
         width: 100%;
         border-radius: 0;
         padding: 20px;
+        flex-grow: 1;
     }
     .sub-menu {
         display: flex;
@@ -134,6 +136,7 @@ nav li:hover > .sub-menu {
         width: 100%;
         padding: 0;
         gap: 0;
+        align-items: flex-start;
     }
     .navToggler, .navTogglerMenu {
         display: block;
